@@ -3,7 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal Profile Card</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .profile-card {
+        max-width: 300px;
+        max-height: 500px;
+        background: linear-gradient(to right bottom, #4e54c8, #8f94fb);
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .profile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      h1,
+      h2,
+      p,
+      address {
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: "Arial", sans-serif;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .contact {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .contact a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .button {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        font-family: "Verdana", sans-serif;
+        background: linear-gradient(to right, #5f72be, #9b23ea);
+        color: white;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+          0 1px 3px rgba(0, 0, 0, 0.08);
+      }
+      .button:hover {
+        transform: translateY(-2px);
+        background: linear-gradient(to right, #7b68ee, #00c6fb);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main class="profile-card">
+      <article class="profile-content">
+        <figure>
+          <img
+            src="profile-image.jpg"
+            alt="Profile Picture"
+            class="profile-picture"
+          />
+        </figure>
+        <section>
+          <h1>Md Foisal</h1>
+          <h2>Web Developer</h2>
+          <p class="description">
+            Passionate about creating elegant and user-friendly web solutions
+            that bring ideas to life.
+          </p>
+          <address class="contact">
+            Email: <a href="mailto:mffoisal8@gmail.com">mffoisal8@gmail.com</a
+            ><br />
+            Mobile: <a href="tel:+8801828660354">+8801828660354</a>
+          </address>
+        </section>
+        <section class="buttons">
+          <button class="button">View CV</button>
+          <button class="button">Hire Me</button>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
