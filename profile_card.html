@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Profile Card</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
       /* CSS Reset */
       * {
@@ -42,7 +47,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        color: #ffffff;
+        color: #f0f0f0;
         text-align: center;
       }
 
@@ -52,7 +57,7 @@
         height: 150px;
         border-radius: 50%;
         object-fit: cover;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       }
 
@@ -81,19 +86,47 @@
       .description {
         font-size: 16px;
         line-height: 1.5;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
 
       /* Contact information styling */
       .contact {
         font-size: 14px;
-        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        text-align: justify;
       }
 
       /* Contact links styling */
       .contact a {
-        color: #ffffff;
+        color: #f0f0f0;
         text-decoration: none;
+      }
+
+      /* Contact icons styling */
+      .contact i {
+        margin-right: 8px;
+        color: #ffffff;
+      }
+
+      /* Social links styling */
+      .social-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .social-links a {
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        color: #00c6fb;
       }
 
       /* Buttons container styling */
@@ -143,10 +176,29 @@
             that bring ideas to life.
           </p>
           <address class="contact">
-            Email: <a href="mailto:mffoisal8@gmail.com">mffoisal8@gmail.com</a
-            ><br />
-            Mobile: <a href="tel:+8801828660354">+8801828660354</a>
+            <p>
+              <i class="fas fa-envelope"></i> Email:
+              <a href="mailto:mffoisal8@gmail.com">mffoisal8@gmail.com</a>
+            </p>
+            <p>
+              <i class="fas fa-phone"></i> Mobile:
+              <a href="tel:+8801828660354">+8801828660354</a>
+            </p>
           </address>
+        </section>
+        <section class="social-links">
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
         </section>
         <section class="buttons">
           <button class="button">View CV</button>
